@@ -1,0 +1,4 @@
+.env
+gitchat-venv
+.python-version
+__pycache__

@@ -1,0 +1,11 @@
+python-dotenv
+weaviate-client
+langchain
+langchain-community
+langchain-text-splitters
+langchain-openai
+langchain-weaviate
+unstructured
+unstructured[md]
+unstructured[rst]
+streamlit
