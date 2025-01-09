@@ -4,9 +4,11 @@ It can be used as a template to create sample repositories that can be added int
 
 Once you finish your sample and it gets merged, you can open a PR in the Daytona repo and submit the sample into the [index file](https://github.com/daytonaio/daytona/blob/main/hack/samples/index.json).
 
-# Sample <LANGUAGE/FRAMEWORK>
+# Sample Streamlit with OpenAI & Weaviate
 
-Sample description
+Git Chat is a RAG application that allows you to have a q/a session with any github repository of your choice. This is especially helpful for beginners who find it difficult to understand complex open source code bases on github.
+
+It uses [Daytona](https://www.daytona.io/docs/) for managing environment, [weaviate cloud vector database](https://weaviate.io/) to store the embeddings, [LangChain with OpenAI](https://python.langchain.com/docs/) for llm models and facilitate queries with context and [streamlit](https://streamlit.io/) for UI.
 
 ---
 
