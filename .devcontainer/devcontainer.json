@@ -1,0 +1,32 @@
+{
+    "name": "Git Chat Development Environment",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu", 
+    "features": {
+      "python": "3.10"
+    },
+    "forwardPorts": [
+      8501
+    ],
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+          "python.linting.enabled": true,
+          "python.linting.pylintEnabled": true,
+          "python.formatting.autopep8Path": "${workspaceFolder}/.venv/bin/autopep8",
+          "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
+          "python.linting.flake8Path": "${workspaceFolder}/.venv/bin/flake8",
+          "python.linting.mypyPath": "${workspaceFolder}/.venv/bin/mypy",
+          "python.linting.pydocstylePath": "${workspaceFolder}/.venv/bin/pydocstyle",
+          "python.linting.pycodestylePath": "${workspaceFolder}/.venv/bin/pycodestyle"
+        },
+        "extensions": [
+          "ms-python.python",
+          "ms-python.vscode-pylance",
+          "njpwerner.autodocstring"
+        ]
+      }
+    },
+    "postCreateCommand": "python -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt"
+  }
+  
